@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,700;1,400;1,600&family=Poppins:wght@300&family=Roboto+Mono:wght@100&family=Roboto:wght@700&family=Ubuntu:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  padding: 7px;
+}
+
+.side-bar {
+  width: 420px;
+}
+
+.main-body {
+  flex: 1;
+  overflow: auto;
+}
+
+.playbar {
+  /* border: 1px solid white; */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 82px;
+  display: flex;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
+  border-radius: 1.2vh;
+  height: 95px;
+  padding: 3px 12px;
+  margin: 0.5rem 0.2rem;
+}
+
+.nav-options {
+  line-height: 2.5rem;
+  margin-left: 1.2rem;
+  padding: 0.2rem;
+  opacity: 0.7;
+}
+
+.nav-options:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.nav-options i {
+  font-size: 1.25rem;
+  padding-right: 1.2rem;
+}
+
+.nav-options a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* slider second box */
+
+.lib {
+  background-color: #121212;
+  border-radius: 1.2vh;
+  height: 95px;
+  padding: 3px 12px;
+  margin: 0.5rem 0.2rem;
+  height: 71vh;
+  /* justify-content: space-between; */
+}
+
+.lib-bar {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.lib-btn {
+  /* border: 1px solid white; */
+  width: 70%;
+  padding: 5px;
+}
+.lib-btn img {
+  width: 22.2px;
+  opacity: 0.7;
+}
+
+.lib-btn a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  padding-left: 1.2rem;
+  opacity: 0.7;
+}
+
+.buttons {
+  /* border: 1px solid white; */
+  width: 30%;
+  padding: 5px;
+}
+.buttons i {
+  padding: 10px;
+}
+.fa-solid {
+  opacity: 0.7;
+}
+
+.lib-btn img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.lib-btn a:hover {
+  opacity: 1;
+}
+.fa-solid:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/* playlist-buttons css */
+
+.playlist-buttons button {
+  background-color: #232323;
+  color: #ffffff;
+  font-weight: bold;
+  border: 1px solid #232323;
+  padding: 8px 12px;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+
+.playlist-buttons button:hover {
+  opacity: 1;
+}
+
+/*  main body css */
+
+.main-body {
+  height: 85.5vh;
+  background-color: #121212;
+  margin: 8px;
+  /* padding: 1rem; */
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.stickey-navbar {
+  /* border: 1px solid white; */
+  position: sticky;
+  top: 0;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  /* margin: 10px; */
+  align-items: center;
+  background-color: #121212;
+  z-index: 10;
+}
+
+.nav-option {
+  display: flex;
+  margin-left: 10px;
+}
+
+.nav-option i {
+  width: 33.3px;
+  background-color: #000;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 8px 12px;
+}
+
+.badge-1 {
+  background-color: white;
+  /* border: 1px solid white; */
+  border-radius: 25px;
+  color: black;
+  margin: 8px;
+  padding: 12px;
+  font-weight: bold;
+}
+.badge-2 {
+  background-color: #121212;
+  color: white;
+  margin: 8px;
+  padding: 12px;
+  border: 1px solid #121212;
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 6px 12px;
+}
+.install-buttons {
+  /* border: 1px solid white; */
+  margin-right: 10px;
+}
+.fa-regular {
+  background-color: #121212;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.install-buttons button:hover {
+  cursor: pointer;
+}
+
+/* cards css */
+.card {
+  margin: 1.4rem;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+.card h2 {
+  margin-bottom: 2rem;
+}
+.cards {
+  width: 180px;
+  /* border: 1px solid white; */
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #171717;
+  margin: 0.77rem;
+  opacity: 0.7;
+}
+.cards:hover {
+  opacity: 1;
+  transition: 0.5s;
+  transition-timing-function: linear;
+  transition-property: all;
+
+  background-color: #313033;
+}
+.cards-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img {
+  width: 100%;
+  border-radius: 12px;
+  /* opacity: 0.9; */
+}
+.cards p {
+  padding-top: 1rem;
+  padding-right: 0.5 rem;
+  padding-left: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.card span {
+  font-size: 0.6rem;
+  padding-right: 0.5 rem;
+  padding-left: 0.5rem;
+}
+
+/* current-music  */
+.current-music {
+  display: flex;
+  align-items: center;
+}
+.music-container {
+  /* background-color: 1px solid white; */
+}
+
+.music-container img {
+  width: 55px;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.music-name p {
+  font-size: 15px;
+}
+.music-name span {
+  font-size: 10px;
+}
+
+/* player bar */
+
+.playbar {
+  display: flex;
+}
+
+.current-music {
+  width: 448px;
+  /* border: 1px solid white; */
+}
+
+.controls {
+  width: 448px;
+  /* border: 1px solid white; */
+  padding-right: 1rem;
+}
+
+/* control buttons */
+.controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin: 5px;
+  padding: 5px;
+  width: 30px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.btn img {
+  width: 20px;
+  height: auto;
+}
+
+/* Styling for the slider */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: white; /* Background color of the slider track */
+  outline: none;
+  opacity: 0.7;
+  transition: background 0.2s;
+  border-radius: 5px; /* Border radius for the slider track */
+}
+
+/* Hover effect for the slider */
+.slider:hover {
+  background: #1db753; /* Change the color on hover to #1db753 */
+}
+
+/* Styling for the slider thumb */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ffffff; /* Color of the slider thumb */
+  border: 1px solid #000; /* Border color of the slider thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #ffffff; /* Color of the slider thumb */
+  border: 1px solid #000; /* Border color of the slider thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Hover effect for the slider thumb */
+.slider::-webkit-slider-thumb:hover,
+.slider::-moz-range-thumb:hover {
+  background: #1db753; /* Change the color on hover to #1db753 */
+}
+
+.soundbar {
+  display: flex;
+  align-items: center;
+}
+
+/* music player */
+
+.player {
+  width: 626px;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-control img {
+  width: 20px;
+  margin: 10px;
+}
+
+.player-control img:hover {
+  cursor: pointer;
+}
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.music-bar {
+  -webkit-appearance: none;
+  width: 450px;
+  height: 5px;
+  background: white; /* Background color of the music bar track */
+  outline: none;
+  opacity: 0.7;
+  transition: background 0.2s;
+  border-radius: 5px; /* Border radius for the music bar track */
+}
+
+/* Hover effect for the music bar */
+.music-bar:hover {
+  background: #1db753; /* Change the color on hover to #1db753 */
+}
+
+/* Styling for the music bar thumb */
+.music-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #ffffff; /* Color of the music bar thumb */
+  border: 1px solid #000; /* Border color of the music bar thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.music-bar::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #ffffff; /* Color of the music bar thumb */
+  border: 1px solid #000; /* Border color of the music bar thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Hover effect for the music bar thumb */
+.music-bar::-webkit-slider-thumb:hover,
+.music-bar::-moz-range-thumb:hover {
+  background: #1db753; /* Change the color on hover to #1db753 */
+}
+
+.progress-bar span {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+
+  align-items: end;
+}
+.footer hr {
+  width: 100%;
+}
+
+
+.lib-container{
+    /* border: 1px solid white; */
+    border-radius: 12px;
+    margin: 10px 3px;
+    padding: 1rem;
+    background-color: #232323;
+    opacity: 0.8;
+    
+}
+
+.lib-container p{
+    font-size: 15px;
+    font-weight: bold;
+}
+.lib-container span{
+    font-size: 10px;
+}
+.lib-container:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+}
